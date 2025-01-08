@@ -36,11 +36,16 @@
         }
 
         nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1rem;
-            font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        }
+
+        nav img {
+            margin-right: 8px;
         }
 
         nav a:hover {
@@ -99,23 +104,72 @@
             text-align: center;
             padding: 1rem 0;
             font-size: 0.9rem;
-            margin-top: auto;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .social-links a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="Auntie & Uncle.png" alt="Auntie & Uncle Logo">
         <h1>Handy-Man Services</h1>
     </header>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="cleaning-services.html">Cleaning Services</a>
-        <a href="childcare-assistance.html">Childcare Assistance</a>
-        <a href="cooking-services.html">Cooking Services</a>
-        <a href="gardening-services.html">Gardening Services</a>
-        <a href="moving-&-rearrangement-services.html">Moving Services</a>
+        <a href="index.html">
+            <img src="Home button.png" alt="Home Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+            Home
+        </a>
+
+        <a href="cleaning-services.html">
+            <img src="Cleaning.png" alt="Cleaning Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+            Cleaning Services
+        </a>
+
+        <a href="childcare-assistance.html">
+            <img src="Childcare.png " alt="Childcare Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+            Childcare Assistance
+        </a>
+
+        <a href="cooking-services.html">
+            <img src="Cooking.png" alt="Cooking Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+            Cooking Services
+        </a>
+
+        <a href="gardening-services.html">
+            <img src="Gardening.png" alt="Gardening Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+            Gardening Services
+        </a>
+
+        <a href="moving-&-rearrangement-services.html">
+            <img src="Moving.png" alt="Moving Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+            Moving & Rearrangement Services
+        </a>
     </nav>
+
     <main>
         <h1>Our Handy-Man Services</h1>
         <ul>
@@ -145,12 +199,31 @@
             </li>
         </ul>
     </main>
+
     <footer>
-        <p>&copy; 2024 Auntie & Uncle. All Rights Reserved.</p>
+        <p>&copy; 2025 Auntie & Uncle. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="Facebook logo.png" alt="Facebook"> Facebook
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="X logo.png" alt="X (Twitter)"> X
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="Instagram logo.png" alt="Instagram"> Instagram
+            </a>
+            <a href="mailto:info@auntieanduncle.com">
+                <img src="Gmail logo.png" alt="Gmail"> Gmail
+            </a>
+        </div>
+        <div style="margin-top: 1rem;">
+            <a href="terms.html" style="color: white; text-decoration: none;">Terms and Conditions</a>
+        </div>
     </footer>
+
     <script>
         function bookNow(service, price) {
-            const phoneNumber = "27815228088"; // Replace with your WhatsApp business number
+            const phoneNumber = "27682839100"; // Replace with your WhatsApp business number
             const message = `Hello! I'd like to book the following service: ${service} at a rate of R${price}.`;
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(url, "_blank");

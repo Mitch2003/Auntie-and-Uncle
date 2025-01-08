@@ -10,7 +10,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: #F4EDE7;
+            background: linear-gradient(to bottom, #ede7f6, #d1c4e9);
             color: #152116;
         }
 
@@ -85,63 +85,119 @@
         }
 
         .service-card a:hover {
-            background: #556B69;
+            background: #9557A6;
             color: white;
         }
 
         footer {
-            background: #AB86BC;
+        background: #AB86BC;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 0.5rem;
             color: white;
-            text-align: center;
-            padding: 1rem 0;
-            font-size: 0.9rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .social-links a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="Auntie & Uncle.png" alt="Auntie & Uncle Logo">
         <h1>Welcome to Auntie & Uncle</h1>
         <p>Reliable House Helpers, At Your Service</p>
     </header>
+
     <section class="hero">
-        <h1>Your Trusted Partner in Household Assistance</h1>
-        <p>We connect you with skilled and reliable helpers for all your household needs.</p>
+        <h2>Welcome to Auntie & Uncle</h2>
+        <p>We connect you with reliable, skilled household service providers for all your home needs.</p>
+        <a href="meet-team.html" style="text-decoration: none;">
+            <button style="background: #AB86BC; color: white; border: none; padding: 0.8rem 1.5rem; font-size: 1rem; cursor: pointer; border-radius: 8px;">
+                Meet Our Team
+            </button>
+        </a>
     </section>
+    
+
     <section class="services-overview">
         <div class="service-card">
             <h3>Cleaning Services</h3>
             <p>Ensure a spotless home with our professional cleaning services.</p>
             <a href="cleaning-services.html">Learn More</a>
         </div>
+
         <div class="service-card">
             <h3>Childcare Assistance</h3>
             <p>Reliable and caring childcare providers to help your family thrive.</p>
             <a href="childcare-assistance.html">Learn More</a>
         </div>
+
         <div class="service-card">
             <h3>Cooking Services</h3>
             <p>Delicious meals prepared by skilled cooks for your household.</p>
             <a href="cooking-services.html">Learn More</a>
         </div>
+
         <div class="service-card">
             <h3>Gardening Services</h3>
             <p>Maintain a beautiful garden with our expert gardeners.</p>
             <a href="gardening-services.html">Learn More</a>
         </div>
+
         <div class="service-card">
             <h3>Handy-Man Services</h3>
             <p>Efficient solutions for all your household repairs and maintenance.</p>
             <a href="handy-man-services.html">Learn More</a>
         </div>
+
         <div class="service-card">
             <h3>Moving & Rearrangement</h3>
             <p>Make your moves hassle-free with our packing and rearrangement services.</p>
             <a href="moving-&-rearrangement-services.html">Learn More</a>
         </div>
     </section>
+
     <footer>
-        <p>&copy; 2024 Auntie & Uncle. All Rights Reserved.</p>
-    </footer>
+        <p>&copy; 2025 Auntie & Uncle. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61571767252817" target="_blank">
+                <img src="Facebook logo.png" alt="Facebook"> Facebook
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="X logo.png" alt="X (Twitter)"> X
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="Instagram logo.png" alt="Instagram"> Instagram
+            </a>
+            <a href="mailto:info@auntieanduncle.com">
+                <img src="Gmail logo.png" alt="Gmail"> Gmail
+            </a>
+        </div>
+        <div style="margin-top: 1rem;">
+            <a href="terms.html" style="color: white; text-decoration: none;">Terms and Conditions</a>
+        </div>
+    </footer>        
 </body>
 </html>
